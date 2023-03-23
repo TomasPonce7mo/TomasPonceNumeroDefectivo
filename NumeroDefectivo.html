@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src = esdefectivo.js></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        let res = false;
+        let num = parseInt(prompt("Ingrese numero"))
+        res = EsDefectivo(num);
+        for(let i=0; i<=num; i++){
+            let ic = i.toString();
+            if(EsDefectivo(ic)){
+                document.write(i+" es defectivo<br>");
+            }
+        }  
+    </script>        
+</body>
+</html>
